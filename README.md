@@ -1,29 +1,45 @@
 # Simple Tasks
 
-Modern full-stack task management application built with React and FastAPI.
-
-## Screenshot
-
-![Simple Tasks UI](screenshots/app.png)
+Simple full-stack task management application built with React and ASP.NET Core Web API.
 
 ## Features
-- Task CRUD operations
-- REST API
-- Dockerized architecture
-- React frontend
-- FastAPI backend
-- SQLite database
-- Modern UI with TailwindCSS
+
+- Add tasks
+- View tasks
+- Delete tasks
+- RESTful API
+- Basic API tests
+- Clean React frontend
 
 ## Stack
-- React
-- FastAPI
-- Docker
-- SQLite
-- SQLAlchemy
-- Axios
 
-## Run with Docker
+Frontend:
+- React
+- Axios
+- TailwindCSS
+
+Backend:
+- ASP.NET Core Web API
+- C#
+
+Testing:
+- xUnit
+
+## Run Frontend
 
 ```bash
-docker compose up --build
+cd frontend
+npm install
+npm run dev
+
+## Run Backend
+
+```bash
+cd backend
+dotnet run
+
+## Run Tests
+
+```bash
+cd tests
+dotnet test
