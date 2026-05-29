@@ -49,7 +49,7 @@ A simple full-stack task management application built with React and ASP.NET Cor
 ### Clone the repository 
 
 ```bash
-git clone https://github.com/your-username/simple-tasks.git
+git clone https://github.com/Knowbein/simple-tasks.git
 ```
 
 ### Run with Docker
