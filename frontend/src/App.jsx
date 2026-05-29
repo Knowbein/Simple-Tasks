@@ -34,15 +34,18 @@ function App() {
     };
 
     const handleToggleTask = async (task) => {
+    const updatedTask = {
+        ...task,
+        completed: !task.completed,
+    };
 
-        const updatedTask = {
-            ...task,
-            completed: !task.completed
-        };
+    const result = await updateTask(updatedTask);
 
-        await updateTask(updatedTask);
-
-        loadTasks();
+    setTasks(
+        tasks.map((t) =>
+            t.id === result.id ? result : t
+        )
+    );
     };
 
   return (

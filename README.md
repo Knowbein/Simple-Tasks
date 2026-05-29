@@ -1,45 +1,62 @@
 # Simple Tasks
 
-Simple full-stack task management application built with React and ASP.NET Core Web API.
+A simple full-stack task management application built with React and ASP.NET Core Web API.
+
+## Screenshot
+
+![Simple Tasks](screenshots/app.png)
 
 ## Features
 
-- Add tasks
+- Create tasks
 - View tasks
+- Mark tasks as completed
 - Delete tasks
 - RESTful API
+- Docker support
 - Basic API tests
-- Clean React frontend
 
-## Stack
+---
 
-Frontend:
+## Tech Stack
+
+### Frontend
 - React
 - Axios
-- TailwindCSS
+- Tailwind CSS
+- Vite
 
-Backend:
+### Backend
 - ASP.NET Core Web API
 - C#
 
-Testing:
+### Testing
 - xUnit
 
-## Run Frontend
+### DevOps
+- Docker
+- Docker Compose
 
-```bash
-cd frontend
-npm install
-npm run dev
+---
 
-## Run Backend
+## API Endpoints
 
-```bash
-cd backend
-dotnet run
+### Get all tasks
 
-## Run Tests
 
-```bash
-cd tests
-dotnet test
+## Deployment
+
+### Clone the repository 
+
+'''bash
+git clone https://github.com/your-username/simple-tasks.git cd simple-tasks
+
+### Run with Docker
+
+docker compose up --build
+
+### he application will be available at:
+
+### Frontend:
+http://localhost:5173
+

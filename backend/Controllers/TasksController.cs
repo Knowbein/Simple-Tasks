@@ -41,4 +41,25 @@ public class TasksController : ControllerBase
 
         return NoContent();
     }
+
+    [HttpPut("{id}")]
+    public ActionResult<TaskItem> UpdateTask(
+        int id,
+        TaskItem updatedTask
+    )
+    {
+        var task = TaskStore.Tasks.FirstOrDefault(
+            t => t.Id == id
+        );
+
+        if (task == null)
+        {
+            return NotFound();
+        }
+
+        task.Title = updatedTask.Title;
+        task.Completed = updatedTask.Completed;
+
+        return Ok(task);
+    }
 }
