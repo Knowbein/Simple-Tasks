@@ -56,7 +56,7 @@ git clone https://github.com/Knowbein/simple-tasks.git
 ```bash
 docker compose up --build
 ```
-### he application will be available at:
+### application will be available at:
 
 ### Frontend:
 http://localhost:5173
